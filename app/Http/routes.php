@@ -51,6 +51,10 @@ Route::group(['prefix' => 'u'], function () {
 	Route::get('/', function () {
 	    return view('account.index');
 	});
+	// Interest
+	Route::get('/', function () {
+	    return view('account.interest.index');
+	});
 	// Profile
 	Route::get('/{username}', function () {
 	    return view('account.profile.index');
