@@ -8,8 +8,8 @@
     <div class="container section-phones">
         <div class="row">
             <div class="col-sm-12">
-                <h1> Lorem Ipsum </h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <h1>Enjoin: connecting people to people</h1>
+                <p>An app that connects people in activities they are interested in. Created to improve </p>
                 <div class="app-market-container">
                     <a href="#"><img src="{{ asset('img/google-play-btn.png') }}"></a>
                     <a href="#"><img src="{{ asset('img/appstore-btn.png') }}" ></a>
