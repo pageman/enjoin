@@ -3024,25 +3024,25 @@ fieldset[disabled] a.btn {
 }
 .btn-default {
   color: #333333;
-  background-color: #ffffff;
+  background-color: transparent;
   border-color: #cccccc;
 }
 .btn-default:focus,
 .btn-default.focus {
   color: #333333;
-  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #8c8c8c;
 }
 .btn-default:hover {
   color: #333333;
-  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #adadad;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333333;
-  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #adadad;
 }
 .btn-default:active:hover,
@@ -3055,7 +3055,7 @@ fieldset[disabled] a.btn {
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
   color: #333333;
-  background-color: #d4d4d4;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #8c8c8c;
 }
 .btn-default:active,
@@ -3081,11 +3081,11 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #ffffff;
+  background-color: transparent;
   border-color: #cccccc;
 }
 .btn-default .badge {
-  color: #ffffff;
+  color: transparent;
   background-color: #333333;
 }
 .btn-primary {
@@ -8720,17 +8720,26 @@ button.close {
 .fa-fonticons:before {
   content: "\f280";
 }
-.btn-facebook {
-  border-color: #3a579d;
+.btn-fb,
+.btn-twitter {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
-.btn-facebook:hover {
+.btn-fb:hover,
+.btn-twitter:hover {
+  color: #fff;
+}
+.btn-fb {
   background-color: #3a579d;
 }
+.btn-fb:hover {
+  background-color: #253865;
+}
 .btn-twitter {
-  border-color: #5ea9dd;
+  background-color: #5ea9dd;
 }
 .btn-twitter:hover {
-  background-color: #5ea9dd;
+  background-color: #2a85c5;
 }
 .hr-or {
   position: relative;
@@ -8750,6 +8759,11 @@ button.close {
 }
 .text-primary {
   color: #ff530d !important;
+}
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
 }
 .app-market-container img {
   width: 128px;

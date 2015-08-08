@@ -2,18 +2,29 @@
 @fb-color: #3A579D;
 @twitter-color: #5EA9DD;
 
-.btn-facebook{
-	border-color: @fb-color;
+
+.btn-fb,
+.btn-twitter{
+	color: #fff;
+	.transition(all 0.3s ease-in-out);
 
 	&:hover{
-		background-color: @fb-color;
+		color: #fff;
+	}
+}
+
+.btn-fb{
+	background-color: @fb-color;
+
+	&:hover{
+		background-color: darken(@fb-color, 15%);
 	}
 }
 
 .btn-twitter{
-	border-color: @twitter-color;
+	background-color: @twitter-color;
 
 	&:hover{
-		background-color: @twitter-color;
+		background-color: darken(@twitter-color, 15%);
 	}
 }
