@@ -9,7 +9,7 @@
     <div class="container-fluid container-feeds">
           <div class="row">
               <div class="col-sm-12">
-                  <h4>Suggestions Nearby near <strong>Dagupan</strong></h4>
+                  <h4 class="nearby-area">Suggestions Nearby near <strong>Dagupan</strong></h4>
                   <div class="show-container">
                     <p><strong>Show me:</strong><span class="show-options">
                      <a class="btn btn-sm btn-default">Badminton</a>

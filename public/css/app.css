@@ -9148,6 +9148,9 @@ body {
   border-radius: 4px;
   background-clip: padding-box;
 }
+.nearby-area {
+  padding: 0 15px;
+}
 .interest-lists {
   padding: 20px;
 }
