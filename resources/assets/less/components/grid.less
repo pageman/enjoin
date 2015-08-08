@@ -1,0 +1,32 @@
+@container-offset: 605px;
+
+.dash-container{
+	position: relative;
+	.transition(all 0.3s ease-in-out);
+}
+
+.result-container{
+	z-index: 1000;
+	left: 0;
+	width: 0;
+	overflow-y: auto;
+	position: absolute;
+	left: 0;
+	.transition(all 0.3s ease-in-out);
+
+}
+
+@media(min-width:768px) {
+    .dash-container {
+        padding-left: @container-offset;
+    }
+
+    .result-container {
+        width: @container-offset;
+    }
+
+    .maps-container {
+        padding: 20px;
+        position: relative;
+    }
+}

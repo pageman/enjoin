@@ -1,0 +1,43 @@
+.interest-lists{
+	padding:20px;
+
+	ul{
+		list-style: none;
+		padding:0 30px;
+		margin:0;
+		display: block;
+		text-align: center;
+
+	}
+
+	li{
+		margin:5px 2.5px;
+		display: inline-block;
+	}
+}
+
+#carousel-interests{
+
+	.interest-control{
+		font-size:50px;
+		position: absolute;
+		top:50%;
+		right:0;
+		margin-top:-25px;
+		color:@dark-blue;
+
+		&.left{
+			left:0;
+			right:auto;
+		}
+	}
+
+	.btn-primary{
+		background:@med-blue;
+		border:1px solid @dark-blue;
+
+		&:hover{
+			background:@dark-blue;
+		}
+	}
+}
