@@ -19,7 +19,7 @@ Route::get('/', function () {
 // Auth
 Route::group(['prefix' => 'auth'], function () {
 	Route::get('/login', function () {
-	    return view('auth.signin');
+	    return view('auth.login');
 	});
 
 	Route::get('/register', function () {
