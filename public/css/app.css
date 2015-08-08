@@ -8720,6 +8720,18 @@ button.close {
 .fa-fonticons:before {
   content: "\f280";
 }
+.btn-facebook {
+  border-color: #3a579d;
+}
+.btn-facebook:hover {
+  background-color: #3a579d;
+}
+.btn-twitter {
+  border-color: #5ea9dd;
+}
+.btn-twitter:hover {
+  background-color: #5ea9dd;
+}
 .hr-or {
   position: relative;
 }
