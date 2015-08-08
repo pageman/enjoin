@@ -51,6 +51,14 @@ Route::group(['prefix' => 'u'], function () {
 	Route::get('/', function () {
 	    return view('account.index');
 	});
+	// Interest
+	Route::get('/interest', function () {
+	    return view('account.interest.index');
+	});
+	// Interest
+	Route::get('/events', function () {
+	    return view('account.events.index');
+	});
 	// Profile
 	Route::get('/{username}', function () {
 	    return view('account.profile.index');
@@ -68,9 +76,25 @@ Route::group(['prefix' => 'e'], function () {
 });
 
 // Messages Routes
-Route::group(['prefix' => 'e'], function () {
+Route::group(['prefix' => 'm'], function () {
 	Route::get('/', function () {
-	    return view('messages.index');
+	    return view('message.index');
+	});
+	Route::get('/{id}', function () {
+	    return view('message.show');
+	});
+	Route::get('/create', function () {
+	    return view('message.create');
+	});
+});
+
+// Nearby Routes
+Route::group(['prefix' => 'nearby'], function () {
+	Route::get('/', function () {
+	    return view('nearby.index');
+	});
+	Route::get('/{id}', function () {
+	    return view('nearby.show');
 	});
 });
 
