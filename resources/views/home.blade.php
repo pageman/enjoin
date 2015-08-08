@@ -43,7 +43,7 @@
                       <div class="col-sm-1"><span class="user-counter">2.</span></div>
 
                       <div class="user-content col-sm-9">
-                      <h3><a href="#">Dolor Inet Santa Maria</a></h3>
+                      <h3 class="user-name"><a href="#">Dolor Inet Santa Maria</a></h3>
                       <div class="col-sm-1"><span class="user-rating">9.7</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Eum sequi et nostrum iusto soluta unde quod necessitatibus cumque.</small></p>
@@ -61,7 +61,7 @@
                       <div class="col-sm-1"><span class="user-counter">3.</span></div>
 
                       <div class="user-content col-sm-9">
-                      <h3><a href="#">Placeat Nemo Vamonos</a></h3>
+                      <h3 class="user-name"><a href="#">Placeat Nemo Vamonos</a></h3>
                       <div class="col-sm-1"><span class="user-rating">9.7</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Eum sequi et nostrum iusto soluta unde quod necessitatibus cumque.</small></p>
@@ -79,7 +79,7 @@
                       <div class="col-sm-1"><span class="user-counter">4.</span></div>
 
                       <div class="user-content col-sm-9">
-                      <h3><a href="#">Suscipit Voluptates Delos Reyes</a></h3>
+                      <h3 class="user-name"><a href="#">Suscipit Voluptates Delos Reyes</a></h3>
                       <div class="col-sm-1"><span class="user-rating">9.7</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Eum sequi et nostrum iusto soluta unde quod necessitatibus cumque.</small></p>
@@ -97,7 +97,7 @@
                       <div class="col-sm-1"><span class="user-counter">5.</span></div>
 
                       <div class="user-content col-sm-9">
-                      <h3><a href="#">Repellat Pepperoni</a></h3>
+                      <h3 class="user-name"><a href="#">Repellat Pepperoni</a></h3>
                        <div class="col-sm-1"><span class="user-rating">9.7</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Eum sequi et nostrum iusto soluta unde quod necessitatibus cumque.</small></p>
