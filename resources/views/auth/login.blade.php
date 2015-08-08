@@ -9,11 +9,11 @@
             <form>
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="text" class="form-control" placeholder="Your email">
+                    <input name="email" type="text" class="form-control" placeholder="Your email">
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="text" class="form-control" placeholder="Your password">
+                    <input name="password" type="password" class="form-control" placeholder="Your password">
                 </div>
                 <button class="btn btn-primary" type="submit">Login</button>
             </form>
