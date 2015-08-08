@@ -16,8 +16,9 @@ Route::get('/', function () {
 });
 
 
-// Auth
+// Auth Routes
 Route::group(['prefix' => 'auth'], function () {
+
 	Route::get('/login', function () {
 	    return view('auth.login');
 	});
@@ -25,4 +26,38 @@ Route::group(['prefix' => 'auth'], function () {
 	Route::get('/register', function () {
 	    return view('auth.register');
 	});
+
 });
+
+// User Routes
+Route::group(['prefix' => 'u'], function () {
+
+	// Feed
+	Route::get('/', function () {
+	    return view('account.index');
+	});
+	// Profile
+	Route::get('/{username}', function () {
+	    return view('account.profile.index');
+	});
+});
+
+
+// Event Routes
+Route::group(['prefix' => 'e'], function () {
+
+	Route::get('/{id}', function () {
+	    return view('event.index');
+	});
+
+});
+
+// Messages Routes
+Route::group(['prefix' => 'e'], function () {
+	Route::get('/', function () {
+	    return view('messages.index');
+	});
+});
+
+
+
