@@ -6,6 +6,7 @@
 </head>
 <body>
 	
+	@include('partials.dash-nav')
 	@yield('content')
 
 	<script src="{{ asset('js/vendor/jquery.min.js') }}"></script>
