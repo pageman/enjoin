@@ -74,5 +74,11 @@ Route::group(['prefix' => 'e'], function () {
 	});
 });
 
+// API Routes
+Route::group(['prefix' => 'api'], function () {
+	Route::get('/interests', [
+		'uses' => 'Api\InterestController@index'
+	]);
+});
 
 
