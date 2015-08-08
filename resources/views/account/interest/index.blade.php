@@ -7,11 +7,10 @@
 <section class="section-interests">
 	<div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-8 col-sm-offset-2">
                 <form action="#">
-                	<label for="searchInterest" class="control-label">Search Interest</label>
-                	<div class="input-group">
-			          <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                	<h4 class="text-center"><label for="searchInterest" class="control-label">Add Interest</label></h4>
+                	<div class="input-group col-sm-12">
 			          <input type="text" class="form-control" name="searchInterest" id="searchInterest" placeholder="Interest">
 			        </div>
 			        <div id="carousel-interests" class="carousel slide" data-ride="carousel">

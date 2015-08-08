@@ -8790,14 +8790,15 @@ div.tagsinput {
   overflow-y: auto;
 }
 div.tagsinput span.tag {
-  border: 1px solid #2b3a42;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+  border: 1px solid #ff530d;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   display: block;
   float: left;
   padding: 5px;
   text-decoration: none;
-  background: #3f5765;
+  background: #ff530d;
   color: #fff;
   margin: 10px 4px;
   font-family: helvetica;
@@ -8805,7 +8806,7 @@ div.tagsinput span.tag {
 }
 div.tagsinput span.tag a {
   font-weight: bold;
-  color: #bdd4de;
+  color: #fff;
   text-decoration: none;
   font-size: 11px;
 }
@@ -8977,6 +8978,13 @@ div.tagsinput div {
 #carousel-interests .interest-control.left {
   left: 0;
   right: auto;
+}
+#carousel-interests .btn-primary {
+  background: #3f5765;
+  border: 1px solid #2b3a42;
+}
+#carousel-interests .btn-primary:hover {
+  background: #2b3a42;
 }
 
 /*# sourceMappingURL=app.css.map */

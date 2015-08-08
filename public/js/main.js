@@ -10,15 +10,20 @@
 			tag.textarea.tagsInput({
 				height:'auto',
 				width:'100%',
+				maxChars:2,
 				defaultText:'Add Interests',
-				onRemoveTag:function(value){
-					$('.interest-lists .item .btn-primary:contains("' + value + '")').parent('li').removeClass('hide');
+				onRemoveTag:function(value,elem_tags){
+					console.log(tag.buttons.text());
+					$('.interest-lists .item .btn-primary:contains("' + $(value).text() + '")').parent('li').removeClass('hide');
+				},
+				onAddTag:function(value){
+					console.log(value);
 				}
 			});
 
 			tag.buttons.click(function(e) {
 				$this = $(this);
-				value = $this.text();
+				value = $this.html();
 				$(tag.textarea).addTag(value);
 				$this.parent('li').addClass('hide')	;
 			});
