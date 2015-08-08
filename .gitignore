@@ -4,4 +4,4 @@ Homestead.yaml
 .env
 npm-debug.log
 /bower_components
-/pulic/css/
+/public/css/
