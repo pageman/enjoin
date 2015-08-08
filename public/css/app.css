@@ -8942,6 +8942,9 @@ div.tagsinput div {
 .nav-sidebar li a:hover .fa {
   color: #ff530d;
 }
+body {
+  padding-top: 70px;
+}
 .with-pad {
   padding: 40px 0;
 }
@@ -9042,6 +9045,108 @@ div.tagsinput div {
   padding: 10px;
   width: 50%;
   float: left;
+}
+.container-feeds {
+  padding: 0;
+}
+.home-container {
+  overflow: hidden;
+  margin-top: -20px;
+}
+.left-container,
+.right-container {
+  float: left;
+}
+.left-container {
+  width: 630px;
+  position: relative;
+  background: #fff;
+  padding-bottom: 9999px;
+  margin-bottom: -9959px;
+  z-index: 2;
+}
+.right-container {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background: #3f5765;
+  height: 100%;
+  width: 100%;
+  padding-left: 630px;
+  z-index: 0;
+}
+.user-content {
+  border-bottom: 1px solid #eeeeee;
+  margin: 0 -15px 15px;
+}
+.user-feeds {
+  list-style: none;
+  padding: 0;
+  margin: 0 -15px;
+}
+.user-feeds li {
+  margin: 15px 0;
+}
+.user-counter {
+  font-size: 12px;
+  display: block;
+  text-align: right;
+  padding-top: 7px;
+  font-weight: 700;
+}
+.user-rating {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #eeeeee;
+  text-align: center;
+  color: #2b3a42;
+  font-size: 11px;
+  padding-top: 7px;
+  border-radius: 15px;
+  background-clip: padding-box;
+}
+.user-rating {
+  color: #fff;
+  background: #2b3a42;
+}
+.user-name {
+  padding: 0 15px;
+  margin: 0 0 5px;
+}
+.user-address {
+  color: #777777;
+  margin: 0 0 5px;
+}
+.user-status {
+  color: #2b3a42;
+  padding-bottom: 10px;
+}
+.user-save {
+  color: #777777;
+}
+.user-save:hover {
+  color: #3f5765;
+  text-decoration: none;
+}
+.show-container {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 7px 15px;
+  margin: 10px -;
+}
+.show-container p {
+  margin: 0;
+}
+.user-image {
+  margin: 0 -15px;
+  padding: 10px 5px;
+}
+.user-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background-clip: padding-box;
 }
 .interest-lists {
   padding: 20px;
