@@ -19,6 +19,10 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('password', 60);
             $table->string('photo');
+            $table->integer('location_lat')->nullable();
+            $table->integer('location_lon')->nullable();
+            $table->string('location_city')->nullable();
+            $table->string('location_country')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

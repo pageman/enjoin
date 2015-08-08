@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 // Auth Routes
-Route::group(['prefix' => 'auth'], function () {
+Route::group([], function () {
 
 	Route::group(['prefix' => 'login'], function () {
 
@@ -26,14 +26,15 @@ Route::group(['prefix' => 'auth'], function () {
 		});
 
 		//Social Login
-		Route::get('/login/{provider?}',[
-		    'uses' => 'AuthController@getSocialAuth',
+		Route::get('/{provider?}',[
+		    'uses' => 'Auth\AuthController@getSocialAuth',
 		    'as'   => 'auth.getSocialAuth'
 		]);
-		Route::get('/login/callback/{provider?}',[
-	    'uses' => 'AuthController@getSocialAuthCallback',
+		//Social Login callback
+		Route::get('/callback/{provider?}',[
+	    'uses' => 'Auth\AuthController@getSocialAuthCallback',
 	    'as'   => 'auth.getSocialAuthCallback'
-	]);
+		]);
 
 });
 
@@ -49,6 +50,10 @@ Route::group(['prefix' => 'u'], function () {
 	// Feed
 	Route::get('/', function () {
 	    return view('account.index');
+	});
+	// Interest
+	Route::get('/', function () {
+	    return view('account.interest.index');
 	});
 	// Profile
 	Route::get('/{username}', function () {
@@ -73,5 +78,11 @@ Route::group(['prefix' => 'e'], function () {
 	});
 });
 
+// API Routes
+Route::group(['prefix' => 'api'], function () {
+	Route::get('/interests', [
+		'uses' => 'Api\InterestController@index'
+	]);
+});
 
 
