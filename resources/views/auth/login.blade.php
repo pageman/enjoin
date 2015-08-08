@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
+
 <div class="container">            
     <div class="auth-container">
         <header class="text-center">
@@ -37,4 +38,5 @@
         </div>
     </div>
 </div>
+
 @endsection
