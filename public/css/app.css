@@ -8736,5 +8736,12 @@ button.close {
   padding: 0 10px;
   color: #777777;
 }
+.text-primary {
+  color: #ff530d !important;
+}
+.app-market-container img {
+  width: 128px;
+  height: auto;
+}
 
 /*# sourceMappingURL=app.css.map */
