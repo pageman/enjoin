@@ -6,5 +6,8 @@
 </head>
 <body>
 	@yield('content')
+
+	<script src="{{ asset('js/vendor/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
 </body>
 </html>

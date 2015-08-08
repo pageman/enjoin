@@ -22,10 +22,14 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                    <button class="btn btn-block btn-fb">Login via Facebook</button>
+                    <button class="btn btn-block btn-fb">
+                        <span class="fa fa-fw fa-facebook"></span> Login via Facebook
+                    </button>
                 </div>
                 <div class="col-sm-6">
-                    <button class="btn btn-block btn-fb">Login via Twitter</button>
+                    <button class="btn btn-block btn-fb">
+                        <span class="fa fa-fw fa-twitter"></span> Login via Twitter
+                    </button>
                 </div>
             </div>
 
