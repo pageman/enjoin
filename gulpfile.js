@@ -16,5 +16,5 @@ elixir(function(mix) {
 });
 
 elixir(function(mix) {
-    mix.version(['css/app.css']);
+    mix.version(['public/css/app.css']);
 });
