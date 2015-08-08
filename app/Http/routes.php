@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 // Auth Routes
-Route::group(['prefix' => 'auth'], function () {
+Route::group([], function () {
 
 	Route::group(['prefix' => 'login'], function () {
 
@@ -26,14 +26,15 @@ Route::group(['prefix' => 'auth'], function () {
 		});
 
 		//Social Login
-		Route::get('/login/{provider?}',[
-		    'uses' => 'AuthController@getSocialAuth',
+		Route::get('/{provider?}',[
+		    'uses' => 'Auth\AuthController@getSocialAuth',
 		    'as'   => 'auth.getSocialAuth'
 		]);
-		Route::get('/login/callback/{provider?}',[
-	    'uses' => 'AuthController@getSocialAuthCallback',
+		//Social Login callback
+		Route::get('/callback/{provider?}',[
+	    'uses' => 'Auth\AuthController@getSocialAuthCallback',
 	    'as'   => 'auth.getSocialAuthCallback'
-	]);
+		]);
 
 });
 
