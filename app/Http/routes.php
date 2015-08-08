@@ -52,5 +52,12 @@ Route::group(['prefix' => 'e'], function () {
 
 });
 
+// Messages Routes
+Route::group(['prefix' => 'e'], function () {
+	Route::get('/', function () {
+	    return view('messages.index');
+	});
+});
+
 
 
