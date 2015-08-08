@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Auth
+Route::group(['prefix' => 'auth'], function () {
+	Route::get('/login', function () {
+	    return view('auth.signin');
+	});
+
+	Route::get('/register', function () {
+	    return view('auth.register');
+	});
+});
