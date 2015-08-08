@@ -22,7 +22,7 @@ Route::group(['prefix' => 'auth'], function () {
 	Route::group(['prefix' => 'login'], function () {
 
 		Route::get('/', function () {
-		    return view('auth.signin');
+		    return view('auth.login');
 		});
 
 		//Social Login
@@ -35,7 +35,7 @@ Route::group(['prefix' => 'auth'], function () {
 	    'as'   => 'auth.getSocialAuthCallback'
 	]);
 
-	});
+});
 
 	Route::get('/register', function () {
 	    return view('auth.register');
