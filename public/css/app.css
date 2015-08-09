@@ -8889,8 +8889,13 @@ div.tagsinput div {
 .page-header h1 {
   font-size: 28px;
 }
+html,
+body {
+  height: 100%;
+}
 .dash-container {
   position: relative;
+  height: 100%;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -8909,6 +8914,12 @@ div.tagsinput div {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
+.maps-container {
+  height: 100%;
+}
+.maps-container #map-canvas {
+  height: 100%;
+}
 @media (min-width: 768px) {
   .dash-container {
     padding-left: 605px;
@@ -8917,7 +8928,6 @@ div.tagsinput div {
     width: 605px;
   }
   .maps-container {
-    padding: 20px;
     position: relative;
   }
 }
@@ -8943,7 +8953,7 @@ div.tagsinput div {
   color: #ff530d;
 }
 body {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .with-pad {
   padding: 40px 0;
@@ -9193,8 +9203,11 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+.suggestions-container,
 .filter-container {
   padding: 8px 15px;
+}
+.filter-container {
   background-color: #eeeeee;
 }
 
