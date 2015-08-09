@@ -12,6 +12,7 @@
 */
 
 Route::get('/', ['uses' => 'HomeController@index']);
+Route::get('/landing', ['uses' => 'HomeController@landing']);
 
 
 // Auth Routes
