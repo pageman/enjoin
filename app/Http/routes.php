@@ -105,4 +105,12 @@ Route::group(['prefix' => 'api'], function () {
 	]);
 });
 
+Route::group(['prefix' => 'messages'], function () {
+    Route::get('/', ['as' => 'messages', 'uses' => 'MessengerController@index']);
+    Route::get('create', ['as' => 'messages.create', 'uses' => 'MessengerController@create']);
+    Route::post('/', ['as' => 'messages.store', 'uses' => 'MessengerController@store']);
+    Route::get('{id}', ['as' => 'messages.show', 'uses' => 'MessengerController@show']);
+    Route::put('{id}', ['as' => 'messages.update', 'uses' => 'MessengerController@update']);
+});
+
 

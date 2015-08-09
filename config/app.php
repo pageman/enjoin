@@ -144,7 +144,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Cmgmyr\Messenger\MessengerServiceProvider::class,
-        Laravel\Socialite\SocialiteServiceProvider::class
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Illuminate\Html\HtmlServiceProvider::class,
+        Cmgmyr\Messenger\MessengerServiceProvider::class,
 
     ],
 
@@ -193,7 +195,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Socialite' => Laravel\Socialite\Facades\Socialite::class
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Form'      => Illuminate\Html\FormFacade::class, 
+        'HTML'      => Illuminate\Html\HtmlFacade::class
 
     ],
 
