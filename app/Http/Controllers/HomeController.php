@@ -33,16 +33,25 @@ class HomeController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = User::distance(15,121, 1000)->get();
+        $id = $request->input('id');
+        if (!empty($id)) 
+        {
+            $data = User::join('user_interests','user_id','=','users.id')->where('interest_id',$id)->distance(14.5,121, 121.024)->get();
+        }
+        else
+        {
+            $data = User::distance(14.5,121, 121.024)->get();
+        }
+        
         $users = User::where('id', '!=', Auth::id())->get();
         return view('account.index', compact('users', 'data'));
     }
 
     public function getLocation()
     {
-        $data = User::distance(14,121, 1000)->get();
+        $data = User::distance(14,121, 100)->get();
         return $data;
     }
 

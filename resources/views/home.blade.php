@@ -12,7 +12,7 @@
                   <h4 class="nearby-area">Suggestions Nearby near <strong>Dagupan</strong></h4>
                   <div class="show-container">
                     <p><strong>Show me:</strong><span class="show-options">
-                     <a class="btn btn-sm btn-default">Badminton</a>
+                     <a href="http://localhost:8000/u?id=1" class="btn btn-sm btn-default">Air Sports</a>
                       <a class="btn btn-sm btn-default">Golf</a>
                        <a class="btn btn-sm btn-default">Ice Skating</a>
                         <a class="btn btn-sm btn-default">Bowling</a>
@@ -30,7 +30,7 @@
                         <h3 class="user-name"><a href="#">asda{{ $datum->name }}</a></h3>
                         <div class="col-sm-1"><span class="user-rating">asda{{ $datum->distance }}</span></div>
                         <div class="user-details col-sm-11">
-                          <p class="user-address"><small>Badminton</small></p>
+                          <p class="user-address"><small>{{ $datum->location_city }}, {{ $datum->location_country }}</small></p>
                           <p class="user-address"><small><span>Earum, impedit, doloribus</span> • <span class="user-date">January 23, 2015</span></small></p>
                           <p class="user-status">Perspiciatis ducimus distinctio reiciendis minus! Alias velit culpa exercitationem voluptate, ipsam ut quod, sed veniam quasi! Pariatur beatae voluptatum, quasi!</p>
                         </div>

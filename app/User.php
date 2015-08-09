@@ -43,7 +43,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     public function interests()
     {
-        return $this->belongsToMany('Interest');
+        return $this->belongsToMany('App\Interest', 'user_interests', 'user_id', 'interest_id');
     }
 
     public function scopeDistance($query, $lat, $lng, $radius = 100, $unit = "km")
