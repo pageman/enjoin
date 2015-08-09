@@ -43,9 +43,7 @@
 			<div class="row">
 				<div class="col-sm-offset-3 col-sm-6">
 					<h1>ENJOIN</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
+					<p>App that connects people through their interest.</p>
 				</div>
 			</div>
 			<div class="row">
