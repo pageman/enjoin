@@ -25,8 +25,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $user = User::find(1);
-        Auth::login($user);
+        //$user = User::find(1);
+        //Auth::login($user);
     }
     /**
      * Display a listing of the resource.
@@ -37,6 +37,17 @@ class HomeController extends Controller
     {
         $users = User::where('id', '!=', Auth::id())->get();
         return view('home', compact('users'));
+    }
+
+    /**
+     * Display landing page
+     *
+     * @return Response
+     */
+    public function landing()
+    {
+        //$users = User::where('id', '!=', Auth::id())->get();
+        return view('landing');
     }
 
     /**
