@@ -8987,6 +8987,11 @@ body {
   -moz-opacity: 1;
   opacity: 1;
 }
+.full-container {
+  width: 100%;
+  max-width: none;
+  padding: 0 30px;
+}
 .navbar-brand {
   text-indent: -999em;
   background: url('../img//site-logo.png') no-repeat center;
