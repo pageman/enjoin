@@ -35,8 +35,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $data = User::distance(45,45, 1000)->get();
         $users = User::where('id', '!=', Auth::id())->get();
-        return view('home', compact('users'));
+        return view('home', compact('users', 'data'));
     }
 
     /**
