@@ -35,15 +35,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
-        $currentUserId = Auth::user()->id;
-        // All threads, ignore deleted/archived participants
-        $threads = Thread::getAllLatest()->get();
-        // All threads that user is participating in
-        // $threads = Thread::forUser($currentUserId)->latest('updated_at')->get();
-        // All threads that user is participating in, with new messages
-        // $threads = Thread::forUserWithNewMessages($currentUserId)->latest('updated_at')->get();
-        return view('home', compact('threads', 'currentUserId'));
+        $users = User::where('id', '!=', Auth::id())->get();
+        return view('home', compact('users'));
     }
 
     /**
