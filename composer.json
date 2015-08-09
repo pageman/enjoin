@@ -11,7 +11,11 @@
         "laravel/socialite": "~2.0",
         "guzzlehttp/guzzle": "~4.0",
         "torann/geoip": "0.2.*",
+<<<<<<< HEAD
         "illuminate/html": "^5.0"
+=======
+        //"illuminate/html": "~5.0"
+>>>>>>> fb7a4df168e75393355a0f7abac0e7039beb0cd6
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
