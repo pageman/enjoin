@@ -1,3 +1,8 @@
+$('.user-save').on('click', function(e){
+	e.preventDefault();
+	$(this).html($(this).html()+'d');
+})
+
 var map;
 function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'), {
