@@ -25,7 +25,7 @@
                       <div class="col-sm-1"><span class="user-counter">1.</span></div>
 
                       <div class="user-content col-sm-9">
-                        <h3 class="user-name"><a href="#">Lorem Ipsum Santos</a></h3>
+                        <h3 class="user-name"><a href="#" data-toggle="modal" data-target="#messages">Lorem Ipsum Santos</a></h3>
                         <div class="col-sm-1"><span class="user-rating">9.7</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Eum sequi et nostrum iusto soluta unde quod necessitatibus cumque.</small></p>
@@ -121,5 +121,20 @@
   </section>
   <div class="clearfix"></div>
 </div>
+
+<div class="modal fade" id="messages">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Messages</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">@include('message.create')</div>
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 @endsection

@@ -1,6 +1,6 @@
-<h1>Create a new message</h1>
+
 {!! Form::open(['route' => 'messages.store']) !!}
-<div class="col-md-6">
+<div class="col-md-12">
     <!-- Subject Form Input -->
     <div class="form-group">
         {!! Form::label('subject', 'Subject', ['class' => 'control-label']) !!}
@@ -20,7 +20,7 @@
         @endforeach
     </div>
     @endif
-    
+
     <!-- Submit Form Input -->
     <div class="form-group">
         {!! Form::submit('Submit', ['class' => 'btn btn-primary form-control']) !!}

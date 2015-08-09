@@ -8966,6 +8966,13 @@ body {
   margin-right: auto;
   max-width: 600px;
 }
+.modal-header {
+  background: #2b3a42;
+  color: #fff;
+}
+.modal-header .close {
+  color: #fff;
+}
 .navbar-brand {
   text-indent: -999em;
   background: url('../img//site-logo.png') no-repeat center;
