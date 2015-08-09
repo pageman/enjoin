@@ -37,7 +37,7 @@ class HomeController extends Controller
     {
         $data = User::distance(15,121, 1000)->get();
         $users = User::where('id', '!=', Auth::id())->get();
-        return view('home', compact('users', 'data'));
+        return view('account.index', compact('users', 'data'));
     }
 
     public function getLocation()
