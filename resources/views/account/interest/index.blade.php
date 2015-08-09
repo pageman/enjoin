@@ -24,7 +24,7 @@
 	                				<li><a data-id="{{ $datum->id }}" class="btn btn-primary">{{ $datum->name }}</a></li>
 	                			@endforeach
 	                			</ul>
-	                		
+
 	                	</div>
 	                		<!-- Controls -->
 							  <a class="left interest-control" href="#carousel-interests" role="button" data-slide="prev">
@@ -36,6 +36,9 @@
 							    <span class="sr-only">Next</span>
 							  </a>
 	                </div>
+
+	                <input type="submit" class="btn btn-primary pull-right" value="Done">
+	                <div class="clearfix"></div>
                 </form>
             </div>
         </div>
