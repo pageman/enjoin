@@ -28,7 +28,7 @@
 
                       <div class="user-content col-sm-9">
                         <h3 class="user-name"><a href="#">{{ $datum->name }}</a></h3>
-                        <div class="col-sm-1"><span class="user-rating">{{ $datum->distance }}</span></div>
+                        <div class="col-sm-1 distance-wrapper"><span class="user-distance">{{ $datum->distance }}</span><span class="distance-unit">km</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Badminton</small></p>
                           <p class="user-address"><small><span>Earum, impedit, doloribus</span> • <span class="user-date">January 23, 2015</span></small></p>
