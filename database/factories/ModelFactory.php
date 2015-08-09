@@ -14,8 +14,13 @@
 $factory->define(App\User::class, function ($faker) {
     return [
         'name' => $faker->name,
+        'username' => $faker->username,
         'email' => $faker->email,
         'password' => str_random(10),
+        'location_lon' => $faker->longitude,
+        'location_lat' => $faker->latitude,
+        'location_city' => $faker->city,
+        'location_country' => $faker->country,
         'remember_token' => str_random(10),
     ];
 });

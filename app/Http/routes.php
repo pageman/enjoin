@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', ['uses' => 'HomeController@index']);
 
 
 // Auth Routes
@@ -52,9 +50,7 @@ Route::group(['prefix' => 'u'], function () {
 	    return view('account.index');
 	});
 	// Interest
-	Route::get('/interest', function () {
-	    return view('account.interest.index');
-	});
+	Route::get('/interest', ['uses' => 'User\InterestController@index' ]);
 	// Interest
 	Route::get('/events', function () {
 	    return view('account.events.index');
