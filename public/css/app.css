@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1067,7 +1068,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -5991,7 +5992,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6113,7 +6114,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8889,6 +8890,9 @@ div.tagsinput div {
 .page-header h1 {
   font-size: 28px;
 }
+.text-block {
+  display: block;
+}
 html,
 body {
   height: 100%;
@@ -9230,6 +9234,49 @@ body {
 }
 .filter-container {
   background-color: #eeeeee;
+}
+#landing-page {
+  padding-top: 0;
+  background: url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+#landing-page h1 {
+  font-size: 54px;
+}
+#landing-page .navbar {
+  background: transparent;
+  border: none;
+  padding-top: 20px;
+}
+#landing-page .navbar .navbar-pic {
+  margin-top: 6px;
+}
+#landing-page .navbar .navbar-nav > li > a {
+  color: #fff;
+}
+#landing-page .form-inline {
+  margin: 30px 0;
+}
+#landing-page .activity-container {
+  margin-top: 15px;
+}
+#landing-page .activity-container .btn {
+  margin: 0 4px;
+  width: 120px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+}
+#landing-page .activity-container .btn:hover,
+#landing-page .activity-container .btn:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+}
+#landing-page .activity-container .btn .fa {
+  font-size: 42px;
+}
+#landing-page .activity-container .btn h5 {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
