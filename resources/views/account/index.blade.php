@@ -26,10 +26,10 @@
                       <div class="col-sm-1"><span class="user-counter">{{ $index + 1 }}.</span></div>
 
                       <div class="user-content col-sm-9">
-                        <h3 class="user-name"><a href="#" data-toggle="modal" data-target="#messages">{{ $datum->name }}</a></h3>
+                        <h3 class="user-name"><a href="#" data-toggle="modal" data-target="#messages" data-whatever="{{ $datum->name }}">{{ $datum->name }}</a></h3>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small><span>{{ $datum->location_city }}, {{ $datum->location_country }}</span> • <span class="user-date">{{ round($datum->distance) }} KM</span></small></p>
-                          <p class="user-status">@foreach($datum->interests as $interest) 
+                          <p class="user-status">@foreach($datum->interests as $interest)
                           - {{ $interest->name }}
                           @endforeach</p>
                         </div>
@@ -54,12 +54,12 @@
   <div class="clearfix"></div>
 </div>
 
-<div class="modal fade" id="messages">
+<div class="modal fade" id="messages" role="dialog" aria-labelledby="messagelabel">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Messages</h4>
+        <h4 class="modal-title" id="messagelabel">Messages</h4>
       </div>
       <div class="modal-body">
         <div class="row">@include('message.create')</div>
@@ -68,5 +68,6 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 @endsection
