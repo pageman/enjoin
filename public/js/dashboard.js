@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $('#messages').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget); // Button that triggered the modal
     var recipient = button.data('whatever') ;// Extract info from data-* attributes
@@ -6,6 +7,12 @@ $('#messages').on('show.bs.modal', function (event) {
     var modal = $(this);
     modal.find('.modal-title').text('Message to ' + recipient);
   });
+=======
+$('.user-save').on('click', function(e){
+	e.preventDefault();
+	$(this).html($(this).html()+'d');
+})
+>>>>>>> d6ba88af2f8b2108e532e419e57dae9f7ce32610
 
 var map;
 function initialize() {
