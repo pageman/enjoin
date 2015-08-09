@@ -5,6 +5,7 @@
 @section('content')
 
 <div class="home-container">
+
   <section class="left-container">
     <div class="container-fluid container-feeds">
           <div class="row">
@@ -19,6 +20,9 @@
                        <a href="http://localhost:8000/u?id=5"class="btn btn-sm btn-default">Basketball</a>
                    </span></p>
                   </div>
+                  <div id="notif" class="alert alert-success hidden">
+Message sent!
+</div>
                   <ul class="user-feeds">
 
                     @foreach($data as $index=>$datum)

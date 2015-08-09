@@ -13,6 +13,16 @@ $('.user-save').on('click', function(e){
 	$(this).html($(this).html()+'d');
 })
 
+$('#btn-submit').on('click', function(e){
+	e.preventDefault();
+	$('.modal').modal('hide');
+	$('#notif').removeClass('hidden');
+
+	setTimeout(function(){
+		$('#notif').addClass('hidden');
+	}, 5000)
+});
+
 var map;
 function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'), {

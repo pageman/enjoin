@@ -16,7 +16,7 @@
 
     <!-- Submit Form Input -->
     <div class="form-group">
-        {!! Form::submit('Submit', ['class' => 'btn btn-primary form-control']) !!}
+        <button class="btn btn-primary form-control" type="submit" id="btn-submit"><span class="fa fa-envelope"></span> Send</button>
     </div>
 </div>
 {!! Form::close() !!}
