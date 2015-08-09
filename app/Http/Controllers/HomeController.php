@@ -25,8 +25,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$user = User::find(1);
-        //Auth::login($user);
+        $user = User::find(1);
+        Auth::login($user);
     }
     /**
      * Display a listing of the resource.

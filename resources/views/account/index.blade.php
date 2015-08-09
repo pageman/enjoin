@@ -26,7 +26,7 @@
                       <div class="col-sm-1"><span class="user-counter">{{ $index + 1 }}.</span></div>
 
                       <div class="user-content col-sm-9">
-                        <h3 class="user-name"><a href="#">{{ $datum->name }}</a></h3>
+                        <h3 class="user-name"><a href="#" data-toggle="modal" data-target="#messages">{{ $datum->name }}</a></h3>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small><span>{{ $datum->location_city }}, {{ $datum->location_country }}</span> • <span class="user-date">{{ round($datum->distance) }} KM</span></small></p>
                           <p class="user-status">@foreach($datum->interests as $interest) 

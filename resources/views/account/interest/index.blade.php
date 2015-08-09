@@ -37,7 +37,7 @@
 							  </a>
 	                </div>
 
-	                <input type="submit" class="btn btn-primary pull-right" value="Done">
+	                <a href="{{ url('u') }}" class="btn btn-primary pull-right">Done</a>
 	                <div class="clearfix"></div>
                 </form>
             </div>
