@@ -24,11 +24,11 @@
 
                     @foreach($data as $index=>$datum)
                     <li>
-                      <div class="col-sm-1"><span class="user-counter">{{ $index + 1 }}.</span></div>
+                      <div class="col-sm-1"><span class="user-counter">asda{{ $index + 1 }}.</span></div>
 
                       <div class="user-content col-sm-9">
-                        <h3 class="user-name"><a href="#">{{ $datum->name }}</a></h3>
-                        <div class="col-sm-1"><span class="user-rating">{{ $datum->distance }}</span></div>
+                        <h3 class="user-name"><a href="#">asda{{ $datum->name }}</a></h3>
+                        <div class="col-sm-1"><span class="user-rating">asda{{ $datum->distance }}</span></div>
                         <div class="user-details col-sm-11">
                           <p class="user-address"><small>Badminton</small></p>
                           <p class="user-address"><small><span>Earum, impedit, doloribus</span> • <span class="user-date">January 23, 2015</span></small></p>
@@ -42,17 +42,14 @@
 
                     </li>
                     @endforeach
-                    
+
                   </ul>
               </div>
           </div>
       </div>
   </section>
   <section class="right-container">
-    <div class="container-fluid">
-      <div id="map-canvas">
-    </div>
-    </div>
+    <div id="map-canvas"></div>
   </section>
   <div class="clearfix"></div>
 </div>
