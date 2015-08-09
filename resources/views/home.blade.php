@@ -22,7 +22,6 @@
                   </div>
                   <ul class="user-feeds">
 
-
                     @foreach($data as $index=>$datum)
                     <li>
                       <div class="col-sm-1"><span class="user-counter">{{ $index + 1 }}.</span></div>
