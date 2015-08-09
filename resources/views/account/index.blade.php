@@ -35,7 +35,7 @@
                           <p class="user-status">Perspiciatis ducimus distinctio reiciendis minus! Alias velit culpa exercitationem voluptate, ipsam ut quod, sed veniam quasi! Pariatur beatae voluptatum, quasi!</p>
                         </div>
                   </div>
-                      <div class="user-image col-sm-2"><img src="http://lorempixel.com/200/200/" alt="Sample Image"></div>
+                      <div class="user-image col-sm-2"><img src="http://namicon.nexucloud.com/{{ strtoupper($datum->name) }}/110/CCC/2b3a42/" alt="Sample Image"></div>
                       <div class="clearfix"></div>
                       <div class="col-sm-11 col-sm-offset-1"><a href="#" class="user-save"><span class="fa fa-bookmark"></span> Save</a></div>
                       <div class="clearfix"></div>
