@@ -8980,6 +8980,17 @@ body {
   margin-right: auto;
   max-width: 600px;
 }
+.modal-header {
+  background: #2b3a42;
+  color: #fff;
+}
+.modal-header .close {
+  color: #fff;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
 .navbar-brand {
   text-indent: -999em;
   background: url('../img//site-logo.png') no-repeat center;
@@ -9065,7 +9076,6 @@ body {
 }
 .home-container {
   overflow: hidden;
-  margin-top: -20px;
 }
 .left-container,
 .right-container {
@@ -9108,21 +9118,23 @@ body {
   padding-top: 7px;
   font-weight: 700;
 }
-.user-rating {
+.distance-wrapper {
+  padding-right: 0;
+}
+.user-distance {
   display: block;
-  width: 30px;
-  height: 30px;
-  background: #eeeeee;
+  width: 100%;
   text-align: center;
   color: #2b3a42;
   font-size: 11px;
   padding-top: 7px;
-  border-radius: 15px;
-  background-clip: padding-box;
 }
-.user-rating {
-  color: #fff;
-  background: #2b3a42;
+.distance-unit {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  color: #777777;
+  width: 100%;
 }
 .user-name {
   padding: 0 15px;
@@ -9164,6 +9176,10 @@ body {
 }
 .nearby-area {
   padding: 0 15px;
+}
+#map-canvas {
+  height: 100% !important;
+  width: 100% !important;
 }
 .interest-lists {
   padding: 20px;

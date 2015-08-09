@@ -47,9 +47,7 @@ Route::group([], function () {
 Route::group(['prefix' => 'u'], function () {
 
 	// Feed
-	Route::get('/', function () {
-	    return view('account.index');
-	});
+	Route::get('/', ['uses' => 'HomeController@index']);
 	// Interest
 	Route::get('/interest', ['uses' => 'User\InterestController@index' ]);
 	// Interest
@@ -100,6 +98,7 @@ Route::group(['prefix' => 'api'], function () {
 	Route::get('/interests', [
 		'uses' => 'Api\InterestController@index'
 	]);
+	Route::get('/nearby', ['uses' => 'HomeController@getLocation']);
 });
 
 Route::group(['prefix' => 'messages'], function () {

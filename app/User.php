@@ -9,7 +9,7 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
 use Cmgmyr\Messenger\Traits\Messagable;
-
+use DB;
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
     use Authenticatable, CanResetPassword;
@@ -45,4 +45,20 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         return $this->belongsToMany('Interest');
     }
+
+    public function scopeDistance($query, $lat, $lng, $radius = 100, $unit = "km")
+{
+    $unit = ($unit === "km") ? 6378.10 : 3963.17;
+    $lat = (float) $lat;
+    $lng = (float) $lng;
+    $radius = (double) $radius;
+    return $query->having('distance','<=',$radius)
+                ->select(DB::raw("*,
+                            ($unit * ACOS(COS(RADIANS($lat))
+                                * COS(RADIANS(location_lat))
+                                * COS(RADIANS($lng) - RADIANS(location_lon))
+                                + SIN(RADIANS($lat))
+                                * SIN(RADIANS(location_lat)))) AS distance")
+                )->orderBy('distance','asc');
+}
 }
