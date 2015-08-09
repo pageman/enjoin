@@ -1,7 +1,13 @@
 @container-offset: 605px;
 
+html,
+body{
+    height: 100%;
+}
+
 .dash-container{
 	position: relative;
+    height: 100%;
 	.transition(all 0.3s ease-in-out);
 }
 
@@ -15,6 +21,13 @@
 	.transition(all 0.3s ease-in-out);
 
 }
+.maps-container{
+    height: 100%;
+
+    #map-canvas{
+        height: 100%;
+    }
+}
 
 @media(min-width:768px) {
     .dash-container {
@@ -26,7 +39,6 @@
     }
 
     .maps-container {
-        padding: 20px;
         position: relative;
     }
 }
