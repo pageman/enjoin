@@ -49,10 +49,7 @@
       </div>
   </section>
   <section class="right-container">
-    <div class="container-fluid">
-      <div id="map-canvas">
-    </div>
-    </div>
+    <div id="map-canvas"></div>
   </section>
   <div class="clearfix"></div>
 </div>
