@@ -30,7 +30,7 @@
                         <h3 class="user-name"><a href="#">{{ $datum->name }}</a></h3>
                         <div class="col-sm-1"><span class="user-rating">{{ $datum->distance }}</span></div>
                         <div class="user-details col-sm-11">
-                          <p class="user-address"><small>{{ $datum->interest->name }}</small></p>
+                          <p class="user-address"><small>Badminton</small></p>
                           <p class="user-address"><small><span>Earum, impedit, doloribus</span> • <span class="user-date">January 23, 2015</span></small></p>
                           <p class="user-status">Perspiciatis ducimus distinctio reiciendis minus! Alias velit culpa exercitationem voluptate, ipsam ut quod, sed veniam quasi! Pariatur beatae voluptatum, quasi!</p>
                         </div>
