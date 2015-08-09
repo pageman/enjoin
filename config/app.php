@@ -145,7 +145,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Cmgmyr\Messenger\MessengerServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-        //Illuminate\Html\HtmlServiceProvider::class,
+        Illuminate\Html\HtmlServiceProvider::class,
         Cmgmyr\Messenger\MessengerServiceProvider::class,
 
     ],

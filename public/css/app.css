@@ -8953,7 +8953,7 @@ body {
   color: #ff530d;
 }
 body {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .with-pad {
   padding: 40px 0;
@@ -8982,6 +8982,10 @@ body {
 }
 .modal-header .close {
   color: #fff;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 .navbar-brand {
   text-indent: -999em;
